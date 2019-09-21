@@ -15,7 +15,7 @@ public class TextureData : UpdatableData {
     public void ApplyToMaterial(Material material) {
 		material.SetInt("baseColorCount", baseColors.Length);
 		material.SetColorArray("baseColors", baseColors);
-		material.SetFloatArray("baseStartHeight", baseStartHeight);
+		material.SetFloatArray("baseStartHeights", baseStartHeight);
 
 		UpdateMeshHeights(material, savedMinHeight, savedMaxHeight);
 	}
